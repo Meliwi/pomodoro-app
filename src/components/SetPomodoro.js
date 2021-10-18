@@ -37,13 +37,17 @@ const SetPomodoro = () => {
     console.log(newTimer);
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    /* When someone submits it prevents that page reload*/
+    e.preventDefault();
+    //updateExecute(newTimer)
+  };
 
   return (
     <div className="form-container">
       {/* No validate means that input shouldn't be validated when submit*/}
       <form noValidate>
-        <div>
+        <div className="input-wrapper">
           <input
             className="input"
             name="work"
@@ -64,7 +68,7 @@ const SetPomodoro = () => {
           ></input>
         </div>
       </form>
-      <Button callBack={handleSubmit}>title="setTimer"</Button>
+      <Button title={"set Timer"} callBack={handleSubmit}></Button>
     </div>
   );
 };

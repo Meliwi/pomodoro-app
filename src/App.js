@@ -1,12 +1,12 @@
-import SetPomodoro from "./components/SetPomodoro";
+// import countDownAnimation from "./components/countDownAnimation";
+// import SetPomodoro from "./components/SetPomodoro";
 
 function App() {
   return (
     <div className="container">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <SetPomodoro></SetPomodoro>
+      <p>Building Pomodoro</p>
+      {/* <SetPomodoro></SetPomodoro> */}
+      {/* <countDownAnimation></countDownAnimation> */}
     </div>
   );
 }
